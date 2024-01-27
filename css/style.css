@@ -350,19 +350,22 @@ li a:hover {
     }
 
     .detail {
-        margin-top: 50px;
+        margin-top: 94px;
         text-align: center;
         color: #ffffff;
     }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .container {
-        padding: 0 1.6rem;
+      padding: 0 1.6rem; 
     }
-}
+} */
 
 @media screen and (max-width:600px) {
+    .container {
+        padding: 0;
+    }
     body {
         height: auto;
     }
@@ -399,8 +402,16 @@ li a:hover {
 
     .main {
         grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
-        margin-top: 2rem;
+        margin-top: -2rem;
         overflow-x: hidden;
+    }
+    .main h1 {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 600;
+        opacity: 0;
+        animation: leftSideAni 1s ease forwards;
+        animation-delay: 1s;
     }
 
     .icon-block {
@@ -433,10 +444,6 @@ li a:hover {
 }
 
 @media screen and (max-width: 1874px) {
-    .container {
-        padding: 0 4.4rem;
-    }
-
     .hero {
         opacity: 0;
         transition: opacity 0.5s ease;
