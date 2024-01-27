@@ -352,6 +352,7 @@ li a:hover {
     .detail {
         margin-top: 50px;
         text-align: center;
+        color: #ffffff;
     }
 }
 
@@ -418,13 +419,17 @@ li a:hover {
 }
 
 .hero {
-    background-image: url("../../assests/foto_andre_matos.png");
+    /* background-image: url("../../assests/foto_andre_matos.png"); */
     background-position: top right;
     background-repeat: no-repeat;
     background-size: auto;
     opacity: 1;
-    height: 100vh;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    position: absolute;
+    top: 10%;
+    left: 64%;
+    width: 35.7%;
+    height: 80%;
 }
 
 @media screen and (max-width: 1874px) {
@@ -433,12 +438,12 @@ li a:hover {
     }
 
     .hero {
-        background-image: none;
+        opacity: 0;
         transition: opacity 0.5s ease;
     }
 
     .main h3 {
-        color: #000;
+        color: rgb(255, 255, 255);
         margin-top: 1rem;
     }
 }
